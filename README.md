@@ -2,7 +2,6 @@
   <img src="docs/assets/oasis-logo.png" alt="OASIS logo" width="440">
 </p>
 
-<h1 align="center">OASIS</h1>
 <h3 align="center">Online Anchor-centric Scene Inference System<br>for Open-Vocabulary Retrieval and Navigation in Dynamic Environments</h3>
 
 <p align="center">
