@@ -30,11 +30,11 @@ sys.path.insert(0, str(project_root))
 
 
 def dualmap_root() -> Path:
-    """Root of the DualMap repo: env DUALMAP_ROOT, else ../DualMap sibling to OASIS."""
-    env = os.environ.get("DUALMAP_ROOT")
+    """Use this checkout by default; retain the legacy root override."""
+    env = os.environ.get("OASIS_ROOT") or os.environ.get("DUALMAP_ROOT")
     if env:
         return Path(env).expanduser().resolve()
-    return (project_root.parent / "DualMap").resolve()
+    return project_root.resolve()
 
 
 from omegaconf import OmegaConf

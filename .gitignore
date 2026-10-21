@@ -16,4 +16,8 @@ venv/
 /checkpoints/
 /weights/
 /wandb/
+/model/
+/3rdparty/
+/keyframes/
+/anchor_summary.json
 *.log

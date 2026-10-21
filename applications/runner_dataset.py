@@ -13,7 +13,7 @@ import psutil
 from omegaconf import DictConfig, OmegaConf
 from tqdm import trange
 
-from dualmap.core import Dualmap
+from oasis.core import Oasis
 from utils.dataset import dataset_initialization
 from utils.eval.eval_utils import (
     get_replica_visibility_data,
@@ -500,8 +500,8 @@ def main(cfg: DictConfig):
     logger.warning("[Runner Dataset]")
     logger.info(OmegaConf.to_yaml(cfg))
 
-    # Initialize Dualmap instance
-    dualmap = Dualmap(cfg)
+    # Initialize OASIS instance
+    dualmap = Oasis(cfg)
 
     # Dataset Object Initialization
     dataset = dataset_initialization(cfg)
@@ -553,7 +553,7 @@ def main(cfg: DictConfig):
             pose=curr_pose,
         )
 
-        # Process data using Dualmap instance
+        # Process data using OASIS instance
         with timing_context("Time Per Frame", dualmap):
             if cfg.use_parallel:
                 dualmap.parallel_process(curr_data)
@@ -662,7 +662,7 @@ def main(cfg: DictConfig):
         logger.info(mem_line)
 
 
-def run_oasis_ablation_replica_report(cfg: DictConfig, dualmap: Dualmap, dataset, logger):
+def run_oasis_ablation_replica_report(cfg: DictConfig, dualmap: Oasis, dataset, logger):
     """Replica GT report: 9 (clustering × frame selection) modes — instance coverage & frame count."""
     replica_gt_path = getattr(cfg, "replica_gt_path", None) or getattr(cfg, "dataset_path", None)
     replica_gt_scene_id = getattr(cfg, "replica_gt_scene_id", None) or getattr(cfg, "scene_id", None)
