@@ -2,7 +2,7 @@
   <img src="docs/assets/oasis-logo.png" alt="OASIS logo" width="440">
 </p>
 
-<h3 align="center">Online Anchor-centric Scene Inference System<br>for Open-Vocabulary Retrieval and Navigation in Dynamic Environments</h3>
+<h3 align="center">OASIS:Online Anchor-centric Scene Inference System<br>for Open-Vocabulary Retrieval and Navigation in Dynamic Environments</h3>
 
 <p align="center">
   <a href="https://oasis-mm2026-project.balmybean65.chatgpt.site">Project Page</a> ·
