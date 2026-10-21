@@ -1,0 +1,14 @@
+# Real-world self-collected: scene root has color/, depth/, pose/*.txt
+dataset_name: 'realworld'
+color_subdir: color
+depth_subdir: depth
+# Keep true if poses match HM3D export; set false if already OpenCV camera coordinates
+apply_hm3d_pose_flip: true
+camera_params:
+  image_height: 720
+  image_width: 1280
+  fx: 640.0
+  fy: 640.0
+  cx: 640.0
+  cy: 360.0
+  png_depth_scale: 1000.0

@@ -1,0 +1,28 @@
+table  
+desk  
+bed  
+sofa  
+shelf  
+shelf unit  
+cabinet  
+dresser  
+nightstand  
+wardrobe  
+closet  
+television stand  
+drawer
+refrigerator
+couch
+bin
+sink
+toilet
+bathtub
+door
+bed frame
+mattress
+bookcase
+shower
+tv
+staircase
+window
+

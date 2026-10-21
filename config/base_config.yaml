@@ -1,0 +1,100 @@
+# ============================================================
+# DATASET CONFIG
+# ============================================================
+# /path/to/after: realworld (RGB 1280x720; depth is resized if resolution differs)
+# dataset_name: realworld
+# scene_id: before
+# dataset_path: /path/to/data
+# dataset_conf_path: config/data_config/dataset/realworld.yaml
+# representative_frames_path: /path/to/before/representative_frames
+
+# Self Collected Data
+# dataset_name: self_collected
+# scene_id: 00829-QaLdnwvtxbs
+# dataset_path: dataset/HM3D_collect
+# dataset_conf_path: config/data_config/dataset/self_collected.yaml
+# representative_frames_path: /path/to/OASIS/dataset/HM3D_collect/00829-QaLdnwvtxbs/representative_frames
+
+
+# HM3D Dataset
+# dataset_name: hm3d
+# scene_id: 00890-6s7QHgap2fW
+# dataset_path: dataset/HM3D_hovsg
+# dataset_conf_path: config/data_config/dataset/hm3d.yaml
+# representative_frames_path: /path/to/OASIS/dataset/HM3D_hovsg/00847/representative_frames
+
+#Replica Dataset
+dataset_name: replica
+scene_id: office_4
+dataset_path: dataset/Replica
+dataset_conf_path: config/data_config/dataset/replica.yaml
+representative_frames_path: /path/to/OASIS/dataset/Replica/office4/representative_frames
+
+# # ScanNet Dataset
+# dataset_name: scannet
+# scene_id: scene0222_00
+# dataset_path: dataset/scannet
+# dataset_conf_path: config/data_config/dataset/scannet.yaml
+# representative_frames_path: /path/to/OASIS/dataset/scannet/exported/scene0222_00/representative_frames
+
+
+# ScanNet++ Dataset
+# dataset_name: scannetpp
+# scene_id: 0a76e06478
+# dataset_path: dataset/scannet++
+# dataset_conf_path: config/data_config/dataset/scannetpp.yaml
+# representative_frames_path: /path/to/OASIS/dataset/scannet++/data/0a76e06478/representative_frames
+
+
+
+## TUM RGBD Dataset
+# dataset_name: tum_rgbd
+# scene_id: rgbd_dataset_freiburg3_walking_static
+# dataset_path: dataset/TUM_RGBD
+# dataset_conf_path: config/data_config/dataset/tum_rgbd.yaml
+# keyframe2_path: /path/to/OASIS/output/keyframe2/tum_rgbd
+# anchor_key_path: /path/to/OASIS/output/keyframe2/tum_rgbd/anchor_key
+
+
+# ============================================================
+# NAVIGATION CONFIG
+# ============================================================
+navigation:
+  dilation_radius: 10  # Obstacle inflation radius (grid cells); larger keeps paths farther from walls. Default 10.
+  top_k_anchors: 3     # Number of anchor candidates returned per retrieval
+  lifelong_navigation: false # Lifelong navigation (incremental representative-frame updates)
+  max_relocalization_attempts: 3 # Max relocalization attempts for object re-finding (loop count)
+
+# ============================================================
+# OUTPUT CONFIG
+# ============================================================
+# output directory
+output_path: ./output/map_results
+
+# Visualization settings
+visualize_mode: "manual" # "auto" (3s timeout) or "manual" (click to continue)
+# visualize_mode: "manual"
+
+# Real-time best-frame selection
+realtime_best_frames:
+  enabled: true  # Enable real-time best-frame selection
+  save_interval: 10  # Save a realtime best frame every N processed frames
+  max_frames_per_object: 5  # Max best frames kept per object
+
+
+
+# ============================================================
+# OASIS ABLATION (Replica Instance Coverage)
+# ============================================================
+# One runner_dataset run produces 9 configs (3 clustering x 3 frame selection)
+run_oasis_ablation: true
+# Replica GT root (only when run_oasis_ablation and using Replica)
+replica_gt_path: /path/to/OASIS/openlex3d/data/replica
+replica_gt_scene_id: office_4  # Options: room_1, room_2, office_0, office_1, office_2, office_3, office_4
+
+
+# ============================================================
+# LOGGING CONFIG
+# ============================================================
+# logging config
+logging_config: ./config/support_config/logging_config.yaml

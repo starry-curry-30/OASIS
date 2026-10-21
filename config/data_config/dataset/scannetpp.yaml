@@ -1,0 +1,6 @@
+dataset_name: 'scannetpp'
+camera_params:
+  image_height: 720
+  image_width: 960
+  png_depth_scale: 1000.0
+

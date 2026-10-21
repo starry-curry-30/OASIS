@@ -1,0 +1,5 @@
+defaults:
+  - system_config
+  - _self_
+
+map_dir: /path/to/OASIS/replica_room_0/map
