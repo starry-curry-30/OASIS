@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="docs/assets/oasis-logo.png" alt="OASIS logo" width="440">
+  <img src="docs/assets/oasis-logo.png?v=20261021-hd" alt="OASIS logo" width="440">
 </p>
 
 <h3 align="center">OASIS: Online Anchor-centric Scene Inference System<br>for Open-Vocabulary Retrieval and Navigation in Dynamic Environments</h3>
 
 <p align="center">
-  <a href="https://oasis-mm2026-project.balmybean65.chatgpt.site">Project Page</a> ·
-  <a href="https://oasis-mm2026-project.balmybean65.chatgpt.site/assets/OASIS-paper.pdf">Paper</a> ·
+  <a href="https://starry-curry-30.github.io/oasis-project">Project Page</a> ·
+  <a href="https://starry-curry-30.github.io/oasis-project/assets/OASIS-paper.pdf">Paper</a> ·
   <a href="#installation">Installation</a> ·
   <a href="#run-on-replica">Quick Start</a> ·
   <a href="docs/getting-started.zh-CN.md">中文运行指南</a>
@@ -42,7 +42,7 @@ conda activate oasis
 python -m pip install --upgrade pip setuptools wheel
 ```
 
-The repository is currently private, so cloning requires GitHub access. Run the following commands from the repository root.
+Run the following commands from the repository root.
 
 ### 2. Install PyTorch and project dependencies
 
