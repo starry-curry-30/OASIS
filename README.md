@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://starry-curry-30.github.io/oasis-project">Project Page</a> ·
-  <a href="https://starry-curry-30.github.io/oasis-project/assets/OASIS-paper.pdf">Paper</a> ·
+  <a href="https://arxiv.org/abs/2610.30589">Paper</a> ·
   <a href="#installation">Installation</a> ·
   <a href="#run-on-replica">Quick Start</a> ·
   <a href="docs/getting-started.zh-CN.md">中文运行指南</a>
