@@ -245,14 +245,10 @@ The implementation builds on components from [DualMap](https://github.com/Eku127
 
 ```bibtex
 @inproceedings{liao2026oasis,
-  title     = {OASIS: Online Anchor-centric Scene Inference System
-               for Open-Vocabulary Retrieval and Navigation
-               in Dynamic Environments},
-  author    = {Liao, Kaiyao and Li, Qingfeng and Chen, Chen
-               and Wu, Xiaoze and Sun, Qing and Niu, Jianwei},
-  booktitle = {Proceedings of the 34th ACM International
-               Conference on Multimedia},
+  title     = {{OASIS}: Online Anchor-centric Scene Inference System for Open-Vocabulary Retrieval and Navigation in Dynamic Environments},
+  author    = {Liao, Kaiyao and Li, Qingfeng and Chen, Chen and Wu, Xiaoze and Sun, Qing and Niu, Jianwei},
+  booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
   year      = {2026},
-  doi       = {10.1145/3767308.3835228}
+  note      = {To appear}
 }
 ```
