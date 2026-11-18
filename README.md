@@ -249,6 +249,14 @@ The implementation builds on components from [DualMap](https://github.com/Eku127
   author    = {Liao, Kaiyao and Li, Qingfeng and Chen, Chen and Wu, Xiaoze and Sun, Qing and Niu, Jianwei},
   booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
   year      = {2026},
-  note      = {To appear}
+  pages     = {5953--5962},
+  numpages  = {10},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  isbn      = {9798400722134},
+  doi       = {10.1145/3767308.3835228},
+  url       = {https://doi.org/10.1145/3767308.3835228},
+  location  = {Rio de Janeiro, Brazil},
+  series    = {MM '26}
 }
 ```
